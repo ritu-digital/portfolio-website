@@ -1,7 +1,6 @@
 .contact {
   width: 100%;
   padding: 5rem 3rem;
-  /* background-color: #151859; */
   background-color: #070640;
   position: relative;
 }
@@ -103,5 +102,19 @@
   }
   .contactForm__right > div {
     width: 100%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .contact > h1 {
+    font-size: 3rem;
+  }
+  .contactForm__right > div {
+    padding: 0;
+    padding-left: 10px;
+  }
+  .contactForm__rightAddress h5,
+  .contactForm__rightMail h5,
+  .contactForm__rightPhone h5 {
+    font-size: 1rem;
   }
 }
