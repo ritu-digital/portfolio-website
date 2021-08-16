@@ -2,7 +2,7 @@ import React from 'react';
 
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import Portfolio from './components/Portfolio/Portfolio';
@@ -14,7 +14,7 @@ import ScrollToTopButton from './components/ScrollToTop/ScrollToTopButton';
 function App() {
   return (
     <div className='app'>
-      <BrowserRouter>
+      <HashRouter>
         <ScrollToTop />
         <Navbar />
         <Switch>
@@ -25,7 +25,7 @@ function App() {
         </Switch>
         <ScrollToTopButton />
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
