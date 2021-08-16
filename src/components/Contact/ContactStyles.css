@@ -1,0 +1,107 @@
+.contact {
+  width: 100%;
+  padding: 5rem 3rem;
+  /* background-color: #151859; */
+  background-color: #070640;
+  position: relative;
+}
+.contact > h1 {
+  text-align: center;
+  font-size: 5rem;
+}
+.contactForm {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  padding: 2rem 6rem;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.contactForm__left {
+  flex: 2;
+  width: 400px;
+  height: 670px;
+  border: 0.1px solid rgba(173, 168, 168, 0.308);
+  border-radius: 4px;
+  box-shadow: rgba(173, 124, 33, 0.16) 0px 1px 4px;
+}
+.contactForm__right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 670px;
+  gap: 2rem;
+  align-items: center;
+  justify-content: right;
+}
+.contactForm__right > div {
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: left;
+  width: 350px;
+  height: 200px;
+  border: 0.1px solid rgba(173, 168, 168, 0.308);
+  border-radius: 4px;
+  box-shadow: rgba(173, 124, 33, 0.16) 0px 1px 4px;
+}
+.contactForm__rightAddress h5,
+.contactForm__rightMail h5,
+.contactForm__rightPhone h5 {
+  font-size: 1.26rem;
+}
+
+.contactForm-flex {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: left;
+}
+.contactForm-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: white;
+}
+.contactForm-icon:nth-of-type(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: pink;
+}
+.contactForm__rightMail {
+  width: 350px;
+  height: 200px;
+  border: 0.1px solid rgba(173, 168, 168, 0.308);
+  border-radius: 4px;
+  box-shadow: rgba(173, 124, 33, 0.16) 0px 1px 4px;
+}
+.contactForm__rightPhone {
+  width: 350px;
+  height: 200px;
+  border: 0.1px solid rgba(173, 168, 168, 0.308);
+  border-radius: 4px;
+  box-shadow: rgba(173, 124, 33, 0.16) 0px 1px 4px;
+}
+@media screen and (max-width: 768px) {
+  .contactForm {
+    display: block;
+    width: 100%;
+    padding: 5rem 0rem;
+  }
+  .contactForm__left {
+    width: 100%;
+    display: block;
+  }
+  .contactForm__right {
+    margin-top: 3rem;
+    width: 100%;
+    display: block;
+  }
+  .contactForm__right > div {
+    width: 100%;
+  }
+}

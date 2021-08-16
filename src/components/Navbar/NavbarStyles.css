@@ -1,0 +1,125 @@
+.navbar {
+  width: 100%;
+  height: 80px;
+  padding: 0 3rem;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  margin-bottom: 1rem;
+}
+.navbar__menuIcon {
+  display: none;
+}
+.navbar__left {
+  width: 35%;
+}
+.navbar__menuSection {
+  width: 65%;
+}
+.navbar__toggleIcon {
+  display: none;
+}
+.navbar__right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__middle > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  list-style: none;
+  gap: 4px;
+}
+.navbar__links > li > a {
+  text-decoration: none;
+  padding: 0 1rem;
+  color: var(--primary-clr);
+  font-weight: 600;
+}
+.navbar__links > li > a:hover {
+  color: var(--secondary-clr);
+}
+.navbar__button {
+  transition: 0.5s ease-in;
+}
+.navbar__button:hover {
+  box-shadow: inset 0 3.25em 0 0 var(--secondary-clr);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    width: 100vw;
+    background-color: rgba(15, 15, 75, 0.788);
+    padding: 1rem 4rem;
+  }
+  .navbar__left {
+    width: 15vw;
+  }
+  .navbar__menuSection {
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar__toggleIcon {
+    display: block;
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: white;
+  }
+  .navbar__right {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    left: -999px;
+  }
+  .navbar__right.active {
+    background-color: rgb(16, 16, 59);
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+    width: 50%;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease;
+    border-right: 2px solid white;
+  }
+  .navbar__right.active > .navbar__middle > ul {
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .navbar {
+    padding: 1rem 2rem;
+  }
+
+  .logo h1 {
+    width: 39px;
+    height: 39px;
+  }
+  .navbar__toggleIcon > svg {
+    width: 34px !important;
+    height: 34px !important;
+  }
+  .logo__img > svg {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}

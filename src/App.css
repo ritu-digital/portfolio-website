@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-clr: #0c0a53;
+  /* --bg-clr: #0b0952; */
+  --primary-clr: #fff;
+  --secondary-clr: #fe3e57;
+}
+html,
+body {
+  width: 100%;
+  background-color: var(--bg-clr);
+  color: var(--primary-clr);
+  overflow-x: hidden;
+}

@@ -1,0 +1,17 @@
+.logo {
+  width: 100px;
+  height: 80px;
+  color: var(--secondary-clr);
+  display: flex;
+  align-items: center;
+}
+.logo h1 {
+  width: 50px;
+  height: 50px;
+  text-shadow: -2px 0px 40px var(--secondary-clr);
+  color: white;
+}
+
+.logo__img {
+  color: var(--secondary-clr);
+}
